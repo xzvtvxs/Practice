@@ -1,0 +1,300 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #22343d;
+  background-color: #fff;
+}
+
+/* RESET */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  /* max-width: 100%;
+    height: auto; */
+}
+
+.container {
+  width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: 237px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+}
+
+.header-nav {
+  margin-right: auto;
+}
+
+.header-nav-list {
+  display: flex;
+  /* gap: 30px; */
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-nav-link {
+  display: block;
+  padding: 26px 0;
+  line-height: 1.75;
+  color: #22343d;
+}
+
+.current {
+  font-weight: 600;
+}
+
+.header-btn-list {
+  display: flex;
+  gap: 21px;
+}
+
+.header-btn {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  width: 105px;
+  height: 42px;
+  font-weight: 600;
+  text-align: center;
+  color: #173a56;
+  background-color: transparent;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  border: none;
+  color: #fff;
+  background: #02897a;
+}
+
+/* HERO */
+
+.hero {
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-title {
+  max-width: 377px;
+  margin-bottom: 18px;
+  font-size: 40px;
+  line-height: 1.5;
+}
+.hero-text {
+  margin-bottom: 45px;
+  max-width: 465px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.hero-list {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-start-btn {
+  border-radius: 4px;
+  min-width: 178px;
+  height: 53px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #02897a;
+  border: none;
+}
+.hero-video-btn {
+  min-width: 164px;
+  height: 53px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #02897a;
+  border: none;
+  background-color: transparent;
+}
+
+/* FEATURE */
+.features {
+  padding-bottom: 100px;
+}
+.features-title {
+  max-width: 535px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  font-size: 32px;
+  text-align: center;
+}
+.features-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.features-item {
+  width: calc((100% - 90px) / 4);
+}
+.features-item-title {
+  margin-top: 26px;
+  margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.features-item-text {
+  line-height: 1.62;
+}
+
+.features-btn {
+  border-radius: 4px;
+  min-width: 175px;
+  height: 53px;
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #fff;
+  background-color: #02897a;
+  border: none;
+  text-transform: uppercase;
+}
+
+.features-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 19px;
+}
+
+.features-icon {
+  fill: #fff;
+}
+
+.features-item:nth-child(1) .features-box {
+  background-color: #02897a;
+}
+.features-item:nth-child(2) .features-box {
+  background-color: #4d8dff;
+}
+.features-item:nth-child(3) .features-box {
+  background-color: #740a76;
+}
+.features-item:nth-child(4) .features-box {
+  background-color: #f03e3d;
+}
+/* SERVICES */
+
+.services-section {
+  padding-top: 141px;
+  padding-bottom: 191px;
+}
+
+.services-list-header {
+  font-weight: 600;
+  font-size: 16px;
+}
+.header-item {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.services-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.services-sublist-header {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.services-sublist-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.services-management-container {
+  display: flex;
+}
+
+/* fOOTER */
+
+.footer-container {
+  display: flex;
+}
+
+.footer-list-social {
+  display: flex;
+}
+
+.footer-social-icon {
+  fill: #02897a;
+}
+
+.resource-container {
+  align-items: center;
+  margin-right: 153px;
+}
+
+.footer-title {
+  margin-bottom: 8px;
+}
