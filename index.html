@@ -261,7 +261,7 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-links">
           <a class="footer-logo logo" href="./index.html">
@@ -270,7 +270,10 @@
           </a>
           <ul class="footer-list-social">
             <li class="footer-list-item">
-              <a class="footer-list-link" href="#">
+              <a class="footer-social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                title="instagram account of Product" >
                 <svg width="24" height="24">
                   <use
                     class="footer-social-icon"
@@ -280,14 +283,20 @@
               </a>
             </li>
             <li class="footer-list-item">
-              <a class="footer-list-link" href="#">
+              <a class="footer-social-link"
+                href="https://www.facebook.com/?locale=ru_RU"
+                target="_blank"
+                title="facebook account of webstudio">
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-list-item">
-              <a class="footer-list-link" href="#">
+              <a  class="footer-social-link"
+                href="https://x.com/"
+                target="_blank"
+                title="x account of Product">
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
@@ -298,32 +307,38 @@
         <div class="resource-container">
           <p class="footer-title">Resource</p>
           <ul class="footer-list-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li>
-              <a href="#">FAQ</a>
-            </li>
+            <li><a class="list-links-item" href="_blank">About Us</a></li>
+            <li><a class="list-links-item" href="_blank">Blog</a></li>
+            <li><a class="list-links-item" href="_blank">Contact</a></li>
+            <li><a class="list-links-item" href="#">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <p>Legal Stuff</p>
+          <p class="footer-title">Legal Stuff</p>
           <ul class="footer-list-links">
-            <li><a href="#">Disclaimer</a></li>
-            <li><a href="#">Financing</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a class="list-links-item" href="#">Disclaimer</a></li>
+            <li><a class="list-links-item" href="#">Financing</a></li>
+            <li><a class="list-links-item" href="#">Privacy Policy</a></li>
           </ul>
         </div>
-        <div>
-          <p>knowing you're always on the best energy deal.</p>
+        <div class="footer-form-container">
+          <div class="form-text-container">
+          <p class="footer-form-text">knowing you're always on the best energy deal.</p>
+          </div>
           <form>
-            <label>
-              <input type="tel" />
-            </label>
+            <label class="footer-form-label" for="user-phone"></label>
+              <div class="input-icon-wrapper">
+                <input class="footer-form-input" type="tel" name="user-phone" id="user-phone" placeholder="Enter your phone number" />
+                <svg class="footer-form-icon" width="16" height="24">
+                  <use href="./images/icons.svg#icon-phone">
+                  </use>
+                </svg>
+              </div>
+              <button class="footer-form-btn" type="submit">Sign up Now</button>
           </form>
         </div>
       </div>
-      <p>Made With Love By Figmaland All Right Reserved</p>
+        <p class="footer-paragraph">Made With Love By Figmaland All Right Reserved</p>
     </footer>
   </body>
 </html>
